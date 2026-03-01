@@ -10,10 +10,10 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6
       name: checkout main repository
 
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6
       name: checkout dependency DLLs
       with:
         ssh-key: '${{ secrets.DLLSSH }}'
