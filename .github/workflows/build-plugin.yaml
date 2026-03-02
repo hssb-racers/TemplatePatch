@@ -40,6 +40,6 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
 
     - name: Push DLL to workflow artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v7
       with:
         path: obj/Debug/TemplatePatch.dll
